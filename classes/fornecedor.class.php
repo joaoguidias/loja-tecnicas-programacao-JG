@@ -1,11 +1,11 @@
 <?php
-    class Fornecedor{
-        public function __construct(private string $razao_social, private string $cnpj, private string $celular, private string $email){
+    class Fornecedores{
+        public function __construct(private int $id_fornecedor,private string $razao_social, private string $cnpj, private string $celular, private string $email){
 
         }
 
-        public function Exibir(){
-            echo "Razão Social: {$this->razao_social} | CNPJ:{$this->cnpj} | CELULAR: {$this->celular} | E-MAIL:{$this->email} <br>";
+        function getId(){
+            return $this->id_fornecedor;
         }
 
         public function getRazao(){
@@ -20,6 +20,22 @@
         public function getEmail(){
             return $this->email;
         }
+        public function setRazao(){
+            $this->razao_social = $razao_social;
+        }
+        public function setCnpj(){
+            $this->cnpj = $cnpj;
+        }
+        public function setCelular(){
+            $this->celular = $celular;
+        }
+        public function setEmail(){
+            $this->email = $email;
+        }
+        public function setId(){
+            $this->id_fornecedor = $id_fornecedor;
+        }
+
     }
 
 
