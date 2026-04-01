@@ -12,6 +12,7 @@
             var_dump($retorno);
             echo "</pre>";
             //apresentá-los 
+            require_once "Views/listar_categorias.php";
         }
 
     }

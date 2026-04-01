@@ -11,7 +11,7 @@
     else
     {
     require_once "Controllers/InicioController.class.php";
-    $obj = new inicioController();
+    $obj = new InicioController();
     $obj->inicio();
     }
 ?>
